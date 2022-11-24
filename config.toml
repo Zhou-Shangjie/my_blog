@@ -1,7 +1,7 @@
 ##########################################
 # 站点配置
 
-baseURL = "https://Zhou-Shangjie.github.io/blog"
+baseURL = "https://Zhou-Shangjie.github.io/my_blog"
 title = "周尚节的博客"
 languageCode = "zh-CN"
 hasCJKLanguage = true
