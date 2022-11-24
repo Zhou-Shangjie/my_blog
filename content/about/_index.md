@@ -1,7 +1,7 @@
 ---
 title: "关于我"
 date: 2022-11-24T23:32:29+08:00
-draft: true
+draft: false
 ---
 Hi, there! :wave:
 
