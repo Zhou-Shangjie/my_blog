@@ -1,7 +1,7 @@
 ##########################################
 # 站点配置
 
-baseURL = "https://example.com/"
+baseURL = "https://Zhou-Shangjie.github.io/blog"
 title = "周尚节的博客"
 languageCode = "zh-CN"
 hasCJKLanguage = true
@@ -104,7 +104,7 @@ uglyURLs = false
     # 头像
     avatar = "/icons/apple-touch-icon.png"
     # 网站（默认值：baseURL）
-    website = "https://io-oi.me/"
+    website = "https://Zhou-Shangjie.me/"
     # 推特
     twitter = "Shangjie__Zhou"
 
