@@ -1,6 +1,92 @@
-<?xml version="1.0" encoding="utf-8"?><rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>周尚节的博客</title><link>https://Zhou-Shangjie.me/</link><description>MemE 是一个强大且可高度定制的 GoHugo 博客主题，专为个人博客设计。</description><generator>Hugo 0.106.0 https://gohugo.io/</generator><language>zh-CN</language><managingEditor>zhou-shangjie@icloud.com (周尚节)</managingEditor><webMaster>zhou-shangjie@icloud.com (周尚节)</webMaster><copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</copyright><lastBuildDate>Fri, 25 Nov 2022 13:35:17 +0000</lastBuildDate><atom:link rel="self" type="application/rss+xml" href="https://Zhou-Shangjie.me/rss.xml"/><item><title>Hello World</title><link>https://Zhou-Shangjie.me/2022/11/hello-world/</link><guid isPermaLink="true">https://Zhou-Shangjie.me/2022/11/hello-world/</guid><pubDate>Thu, 24 Nov 2022 23:32:23 +0800</pubDate><author>zhou-shangjie@icloud.com (周尚节)</author><copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</copyright><description>&lt;p>原来的旧网站被Github自动更新得乱七八糟，于是新搭建了一个:&lt;/p>
+<?xml version="1.0" encoding="utf-8"?><rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>周尚节的博客</title><link>https://Zhou-Shangjie.me/</link><description>MemE 是一个强大且可高度定制的 GoHugo 博客主题，专为个人博客设计。</description><generator>Hugo 0.106.0 https://gohugo.io/</generator><language>zh-CN</language><managingEditor>zhou-shangjie@icloud.com (周尚节)</managingEditor><webMaster>zhou-shangjie@icloud.com (周尚节)</webMaster><copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</copyright><lastBuildDate>Fri, 25 Nov 2022 13:43:30 +0000</lastBuildDate><atom:link rel="self" type="application/rss+xml" href="https://Zhou-Shangjie.me/rss.xml"/><item><title>Hello World</title><link>https://Zhou-Shangjie.me/2022/11/hello-world/</link><guid isPermaLink="true">https://Zhou-Shangjie.me/2022/11/hello-world/</guid><pubDate>Thu, 24 Nov 2022 23:32:23 +0800</pubDate><author>zhou-shangjie@icloud.com (周尚节)</author><copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</copyright><description>&lt;p>原来的旧网站被Github自动更新得乱七八糟，于是新搭建了一个:&lt;/p>
 &lt;ul>
 &lt;li>改用&lt;a href="https://gohugo.io/">Hugo&lt;/a>框架&lt;/li>
 &lt;li>换了一个更简洁的主题&lt;a href="https://github.com/reuixiy/hugo-theme-meme">MemE&lt;/a>&lt;/li>
 &lt;li>花重金12人民币购入域名一个：&lt;a href="zhou-shangjie.me">zhou-shangjie.me&lt;/a>&lt;/li>
-&lt;/ul></description></item></channel></rss>
+&lt;/ul></description></item><item><title>TikZ导出PNG格式图片</title><link>https://Zhou-Shangjie.me/2022/02/tikz%E5%AF%BC%E5%87%BApng%E6%A0%BC%E5%BC%8F%E5%9B%BE%E7%89%87/</link><guid isPermaLink="true">https://Zhou-Shangjie.me/2022/02/tikz%E5%AF%BC%E5%87%BApng%E6%A0%BC%E5%BC%8F%E5%9B%BE%E7%89%87/</guid><pubDate>Sun, 27 Feb 2022 20:38:05 +0800</pubDate><author>zhou-shangjie@icloud.com (周尚节)</author><copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</copyright><description>&lt;p>利用&lt;code>LaTeX&lt;/code>的&lt;code>TikZ&lt;/code>宏包可以绘制图形，但是默认导出的为pdf格式。有时我们需要PNG等图片格式以便于插入在网页上，于是需要将pdf格式转换为图片格式。&lt;/p>
+&lt;h1 id="安装imagemagick">安装&lt;code>ImageMagick&lt;/code>&lt;/h1>
+&lt;p>首先，我们去&lt;a href="https://imagemagick.org/script/download.php">ImageMagick官网&lt;/a>下载合适版本的&lt;code>ImageMagick&lt;/code>。下载完成后安装即可。安装完成后将安装目录添加到系统Path路径中(系统搜索&lt;strong>环境变量&lt;/strong>)。&lt;/p>
+&lt;h1 id="允许-shell-escape">允许&lt;code>-shell-escape&lt;/code>&lt;/h1>
+&lt;p>不同编辑器允许&lt;code>-shell-escape&lt;/code>的方式不同，可以在这个StackExchange问题下查找：&lt;a href="https://tex.stackexchange.com/questions/598818/how-can-i-enable-shell-escape">How can I enable shell-escape?&lt;/a>。&lt;/p>
+&lt;p>此处以&lt;code>VScode&lt;/code>中的&lt;a href="https://marketplace.visualstudio.com/items?itemName=James-Yu.latex-workshop">&lt;code>LaTeX Workshop&lt;/code>&lt;/a>插件为例。
+打开&lt;code>VScode&lt;/code>，确保已经安装&lt;code>LaTex Workshop&lt;/code>。按下&lt;code>Ctrl+Shift+P&lt;/code>，输入&lt;code>Preferences: Open Settings (JSON)&lt;/code>。进入&lt;code>settings.json&lt;/code>中添加如下代码&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
+&lt;/span>&lt;span class="lnt"> 2
+&lt;/span>&lt;span class="lnt"> 3
+&lt;/span>&lt;span class="lnt"> 4
+&lt;/span>&lt;span class="lnt"> 5
+&lt;/span>&lt;span class="lnt"> 6
+&lt;/span>&lt;span class="lnt"> 7
+&lt;/span>&lt;span class="lnt"> 8
+&lt;/span>&lt;span class="lnt"> 9
+&lt;/span>&lt;span class="lnt">10
+&lt;/span>&lt;span class="lnt">11
+&lt;/span>&lt;span class="lnt">12
+&lt;/span>&lt;span class="lnt">13
+&lt;/span>&lt;span class="lnt">14
+&lt;/span>&lt;span class="lnt">15
+&lt;/span>&lt;span class="lnt">16
+&lt;/span>&lt;span class="lnt">17
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-json" data-lang="json">&lt;span class="line">&lt;span class="cl">&lt;span class="s2">&amp;#34;latex-workshop.latex.tools&amp;#34;&lt;/span>&lt;span class="err">:&lt;/span> &lt;span class="p">[&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;name&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="s2">&amp;#34;latexmk&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;command&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="s2">&amp;#34;latexmk&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;args&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="p">[&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="s2">&amp;#34;-shell-escape&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="s2">&amp;#34;-synctex=1&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="s2">&amp;#34;-interaction=nonstopmode&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="s2">&amp;#34;-file-line-error&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="s2">&amp;#34;-pdf&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="s2">&amp;#34;-outdir=%OUTDIR%&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="s2">&amp;#34;%DOC%&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">],&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;env&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="p">{}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">},&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="err">...&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">]&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>如果以前输入过，只需在&lt;code>&amp;quot;args&amp;quot;&lt;/code>栏目中添加&lt;code>&amp;quot;-shell-escape&amp;quot;&lt;/code>一项。这样就允许了&lt;code>-shell-excape&lt;/code>。&lt;/p>
+&lt;h1 id="latex代码设置">LaTeX代码设置&lt;/h1>
+&lt;p>为了导出PNG格式，我们选用&lt;code>standalone&lt;/code>文档类，调用其中的&lt;code>convert&lt;/code>选项来完成格式转换。下面给出一个例子：&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
+&lt;/span>&lt;span class="lnt"> 2
+&lt;/span>&lt;span class="lnt"> 3
+&lt;/span>&lt;span class="lnt"> 4
+&lt;/span>&lt;span class="lnt"> 5
+&lt;/span>&lt;span class="lnt"> 6
+&lt;/span>&lt;span class="lnt"> 7
+&lt;/span>&lt;span class="lnt"> 8
+&lt;/span>&lt;span class="lnt"> 9
+&lt;/span>&lt;span class="lnt">10
+&lt;/span>&lt;span class="lnt">11
+&lt;/span>&lt;span class="lnt">12
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-latex" data-lang="latex">&lt;span class="line">&lt;span class="cl">&lt;span class="k">\documentclass&lt;/span>&lt;span class="na">[convert={convertexe={magick}}]&lt;/span>&lt;span class="nb">{&lt;/span>standalone&lt;span class="nb">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">\usepackage&lt;/span>&lt;span class="nb">{&lt;/span>tikz-cd&lt;span class="nb">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">\usepackage&lt;/span>&lt;span class="nb">{&lt;/span>amsmath,amssymb&lt;span class="nb">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">\usepackage&lt;/span>&lt;span class="nb">{&lt;/span>mathtools&lt;span class="nb">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">\pagecolor&lt;/span>&lt;span class="nb">{&lt;/span>white&lt;span class="nb">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">\begin&lt;/span>&lt;span class="nb">{&lt;/span>document&lt;span class="nb">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">\begin&lt;/span>&lt;span class="nb">{&lt;/span>tikzcd&lt;span class="nb">}&lt;/span>[row sep=huge]
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nb">&amp;amp;&lt;/span>D&lt;span class="nb">^{&lt;/span>2&lt;span class="nb">}&lt;/span>&lt;span class="k">\arrow&lt;/span>&lt;span class="na">[dl,shift right]&lt;/span>&lt;span class="k">\arrow&lt;/span>&lt;span class="na">[dr,shift left,&amp;#34;+S^{1}&amp;#34;]&lt;/span>&lt;span class="nb">{&lt;/span>+S&lt;span class="nb">^{&lt;/span>1&lt;span class="nb">}}&amp;amp;&lt;/span>&lt;span class="k">\\&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">\mathbb&lt;/span>&lt;span class="nb">{&lt;/span>R&lt;span class="nb">}^{&lt;/span>2&lt;span class="nb">}&lt;/span>&lt;span class="k">\arrow&lt;/span>&lt;span class="na">[ur,shift right]&lt;/span>&lt;span class="k">\arrow&lt;/span>&lt;span class="na">[rr,&amp;#34;+\{\infty\}&amp;#34;]&lt;/span> &lt;span class="nb">&amp;amp;&lt;/span> &lt;span class="nb">&amp;amp;&lt;/span>S&lt;span class="nb">^{&lt;/span>2&lt;span class="nb">}&lt;/span>&lt;span class="k">\arrow&lt;/span>&lt;span class="na">[ul,shift left,&amp;#34;-\{p\}&amp;#34;]&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">\end&lt;/span>&lt;span class="nb">{&lt;/span>tikzcd&lt;span class="nb">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="s">$&lt;/span>&lt;span class="nv">\xRightarrow&lt;/span>&lt;span class="nb">{&lt;/span>&lt;span class="nv">\text&lt;/span>&lt;span class="nb">{generlization}} S^{n}&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="nv">\mathbb&lt;/span>&lt;span class="nb">{R}^{n}&lt;/span>&lt;span class="nv">\bigcup&lt;/span>&lt;span class="nb"> &lt;/span>&lt;span class="nv">\{\infty\}&lt;/span>&lt;span class="s">$&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">\end&lt;/span>&lt;span class="nb">{&lt;/span>document&lt;span class="nb">}&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>注意以下几点：&lt;/p>
+&lt;ol>
+&lt;li>代码第一行的文档选项&lt;code>convert={convertexe={magick}}&lt;/code>里面的&lt;code>magick&lt;/code>为下载的&lt;code>ImageMagick&lt;/code>中&lt;code>.exe&lt;/code>文件的文件名（以后版本文件名也可能有变化，要注意改变）。网上其他相关的资料可能文档选项只有&lt;code>convert&lt;/code>，因为&lt;code>ImageMagick&lt;/code>早期版本可能文件名与现在不同。&lt;/li>
+&lt;li>转换后得到的PNG图片可能背景是透明的,&lt;code>\pagecolor{white}&lt;/code>可以让背景变为白色。&lt;/li>
+&lt;li>默认得到的为300dpi的PNG格式图片。可以更改选项调整得到需要的图片，具体见：&lt;a href="https://ctan.org/pkg/standalone">&lt;code>standalone&lt;/code>官方文档&lt;/a>。&lt;/li>
+&lt;/ol>
+&lt;p>该代码生成的图片为：&lt;img src="https://cdn.jsdelivr.net/gh/spaceofzsj/pic/20220331232804.png" alt="Relations">&lt;/p></description><category domain="https://Zhou-Shangjie.me/tags/latex/">LaTeX</category><category domain="https://Zhou-Shangjie.me/tags/tikz/">TikZ</category></item></channel></rss>
