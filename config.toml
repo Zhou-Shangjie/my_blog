@@ -22,7 +22,7 @@ defaultContentLanguageInSubdir = false
 pluralizeListTitles = false
 
 # 摘要的字数限制
-summaryLength = 42
+summaryLength = 110
 
 # 是否开启 GitHub 风格的 Emoji 书写方式
 enableEmoji = true
@@ -48,6 +48,7 @@ uglyURLs = false
 [permalinks]
     categories = "/categories/:slug/"
     tags = "/tags/:slug/"
+    posts = '/:year/:month/:title/'
 
 # 类别
 [taxonomies]
@@ -412,7 +413,7 @@ uglyURLs = false
     # 列表页面
 
     # 宽度
-    listWidth = 36
+    listWidth = 50
     # 说明：如果留空（""），则用 42 作为默认值
     #      单位：em
 
@@ -736,7 +737,7 @@ uglyURLs = false
     # 注意：只支持 HSL 颜色值
 
     # 文章的内容宽度
-    postWidth = 36
+    postWidth = 50
     # 说明：如果留空（""），则用 42 作为默认值
     #      单位：em
 

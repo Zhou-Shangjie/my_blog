@@ -34,8 +34,8 @@
     weight = 4
 
 [[socials]]
-    id = "telegram"
-    url = "https://t.me/shangjiezhou"
-    icon = "telegram"
-    title = "Telegram"
+    id = "facebook"
+    url = "https://www.facebook.com/profile.php?id=100080513442851"
+    icon = "facebook"
+    title = "Facebook"
     weight = 5
