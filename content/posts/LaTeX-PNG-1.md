@@ -1,7 +1,7 @@
 ---
 title: "TikZ导出PNG格式图片"
 date: 2022-02-27T20:38:05+08:00
-draft: true
+draft: false
 tags: 
 - LaTeX
 - TikZ
