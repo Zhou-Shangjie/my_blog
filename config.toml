@@ -339,7 +339,7 @@ uglyURLs = false
     # 说明：用于 JSON-LD、Open Graph
 
     # 站点的描述
-    siteDescription = "MemE 是一个强大且可高度定制的 GoHugo 博客主题，专为个人博客设计。"
+    siteDescription = "一些记录"
     # 说明：用于 HTML 的头部元数据、JSON-LD、
     #      Open Graph、Atom、RSS
 
@@ -596,12 +596,12 @@ uglyURLs = false
     # 说明：仅在生产环境（production）下渲染
 
     # 是否开启（全局设置）
-    enableComments = false
+    enableComments = true
     # 说明：文章的 Front Matter 中的 `comments`
     #      的优先级高于此处
 
     # 直接加载评论，不需要手动点击按钮加载
-    autoLoadComments = false
+    autoLoadComments = true
 
     ## Disqus
     enableDisqus = false
@@ -638,12 +638,12 @@ uglyURLs = false
     # 说明：https://utteranc.es/
 
     ## Gitalk
-    enableGitalk = false
-    gitalkClientID = "your_client_id"
-    gitalkClientSecret = "your_client_secret"
-    gitalkRepo = "your_repository"
-    gitalkOwner = "your_gitalk_owner"
-    gitalkAdmin = ["your_gitalk_admin"]
+    enableGitalk = true
+    gitalkClientID = "f54259fe6d64b6a7eb82"
+    gitalkClientSecret = "b77c7475c06d697b8b516e918da0e15c9fff36e0"
+    gitalkRepo = "my_blog"
+    gitalkOwner = "Zhou-Shangjie"
+    gitalkAdmin = ["Zhou-Shangjie"]
 
     # 1. default (`location.href`)
     # 2. pathname (`location.pathname`)
@@ -665,7 +665,7 @@ uglyURLs = false
 
     # 1. default (`navigator.language || navigator.userLanguage`)
     # 2. Support [en, zh-CN, zh-TW, es-ES, fr, ru, de, pl, ko, fa, ja]
-    gitalkLanguage = "zh-CN"
+    gitalkLanguage = "default"
 
     gitalkPerPage = 10
     gitalkDistractionFreeMode = false
