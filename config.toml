@@ -668,7 +668,7 @@ uglyURLs = false
     gitalkLanguage = "default"
 
     gitalkPerPage = 10
-    gitalkDistractionFreeMode = false
+    gitalkDistractionFreeMode = true
     gitalkPagerDirection = "last"
     gitalkCreateIssueManually = false
     gitalkProxy = "https://cors-anywhere.azm.workers.dev/https://github.com/login/oauth/access_token"
