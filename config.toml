@@ -638,7 +638,7 @@ uglyURLs = false
     # 说明：https://utteranc.es/
 
     ## Gitalk
-    enableGitalk = true
+    enableGitalk = false
     gitalkClientID = "f54259fe6d64b6a7eb82"
     gitalkClientSecret = "b77c7475c06d697b8b516e918da0e15c9fff36e0"
     gitalkRepo = "my_blog"
@@ -679,6 +679,8 @@ uglyURLs = false
     gitalkEnableHotKey = true
     # 说明：https://github.com/gitalk/gitalk
 
+    ## Gisgus
+    enableGiscus = true
 
     ######################################
     # Google Analytics
